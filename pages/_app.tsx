@@ -7,6 +7,7 @@ import { CacheProvider } from '@emotion/react';
 import Head from 'next/head';
 import { CssBaseline, StyledEngineProvider, ThemeProvider } from '@mui/material';
 import theme from '../src/theme';
+import Layout from '../Layout';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -20,12 +21,16 @@ function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>SellX: Effortlessly source, manage & scale remote sells talent</title>
+        <link rel="icon" href="/icon.png" />
       </Head>
       <ThemeProvider theme={theme}>
       <StyledEngineProvider injectFirst>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
         </StyledEngineProvider>
       </ThemeProvider>
     </CacheProvider>
