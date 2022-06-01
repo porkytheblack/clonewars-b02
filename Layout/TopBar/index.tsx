@@ -30,7 +30,7 @@ function TopBar() {
             <NavbarButton>
                 login
             </NavbarButton>
-            <SignUpButton>
+            <SignUpButton style={{padding: "9px 24px"}} >
                 Sign Up
             </SignUpButton>
         </MBox>
@@ -47,6 +47,7 @@ const TopBarContainer = styled(Box)`
     backdrop-filter: blur(12px);
     position: fixed;
     justify-content: space-between;
+    z-index: 20;
 `
 
 const MBox = styled(Box)`
