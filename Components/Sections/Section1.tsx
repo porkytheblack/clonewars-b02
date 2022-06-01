@@ -37,7 +37,7 @@ function Section1() {
             </div>
         </div>
         <div className="flex SectionImage">
-            <Image width={"671px"} height={"689px"} src={"/assets/images/image_asset_one.png"}/>
+            <Image width={"671px"} height={"689px"} alt="asset_one" src={"/assets/images/image_asset_one.png"}/>
         </div>
         
     </CustomSectionBox>
