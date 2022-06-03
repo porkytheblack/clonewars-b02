@@ -58,7 +58,10 @@ const CustomSectionBox = styled(Box)`
         margin-bottom: 72px;
     }
     .ContentRight{
-
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     .Companies{
         margin-top: 48px;
