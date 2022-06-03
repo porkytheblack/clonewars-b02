@@ -7,6 +7,13 @@ const nextConfig = {
       use: ["@svgr/webpack"]
     })
     return config
+  },
+  experimental: {
+    emotion: {
+      sourceMap: true,
+      autoLabel: true,
+      
+    }
   }
 }
 

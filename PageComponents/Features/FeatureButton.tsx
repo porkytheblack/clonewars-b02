@@ -19,7 +19,7 @@ function FeatureButton({children, feature,}: { children : string, feature: "crm 
   return (
     <CustomContainerBox onClick={()=>{
         chooseFeature(feature)
-    }} className='flex w-full flex-col items-start justify-start' >
+    }} className='flex w-screen overflow-x-hidden flex-col items-start justify-start' >
         <Typography className="uppercase" color="white" fontWeight={"300"} fontSize={"40px"} variant="h6" fontFamily={`"NeueMontreal-300", sans-serif`} align="left" width="100%" >
                 {feature}
         </Typography>
@@ -35,6 +35,7 @@ export default FeatureButton
 const CustomContainerBox = styled('button')`
     border: none;
     outline: none;
+
     background: none;
     padding-top: 32px;
     padding-bottom: 16px;

@@ -8,13 +8,14 @@ import TopBar from './TopBar'
 function Layout({ children }: {children: React.ReactNode}) {
   
   return (
-    <ScrollObserver>
+    
       <CustomLayoutBox className="w-screen  flex flex-col items-center justify-start" >
+        <ScrollObserver>
           <TopBar/>
           {children}
           <Footer/>
+          </ScrollObserver>
       </CustomLayoutBox>
-    </ScrollObserver>
   )
 }
 
@@ -22,15 +23,7 @@ export default Layout
 
 const CustomLayoutBox = styled(Box)`
     background-color: black;
-    min-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    &::-webkit-scrollbar {
-        width: 5px;
-        background: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-    }
+    
+    width: 100vw;
+
 `

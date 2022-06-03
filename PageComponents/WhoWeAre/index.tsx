@@ -2,22 +2,29 @@ import React from 'react'
 import styled from "@emotion/styled"
 import { Box, Typography } from '@mui/material'
 import AnimatedText from './AnimatedText'
+
+
+interface n {
+    percentage_in_view: number
+}
+
+
 function WhoWeAre() {
   return (
     <CustomContainerBox className="flex flex-col items-start justify-start " >
-        <AnimatedText>
+        <AnimatedText pos={0} >
             The most advanced revenue
         </AnimatedText>
-        <AnimatedText>
+        <AnimatedText pos={1} >
         platform to effortlessly source,
         </AnimatedText>
-        <AnimatedText>
+        <AnimatedText pos={2} >
         manage, and scale top remote
         </AnimatedText>
-        <AnimatedText>
+        <AnimatedText pos={3} >
         sales talent to generate qualified
         </AnimatedText>
-        <AnimatedText>
+        <AnimatedText pos={4} >
         opportunities.
         </AnimatedText>
         <div style={{marginTop: "100px", width: "inherit", justifyContent: "flex-end"}} className="flex flex-row items-center justify-end ">

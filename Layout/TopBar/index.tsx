@@ -5,6 +5,7 @@ import {css} from "@emotion/react"
 import styled from '@emotion/styled'
 import NavbarButton from '../../Components/Buttons/NavbarButton'
 import SignUpButton from '../../Components/Buttons/SignUpButton'
+import DropDownButton from '../../Components/Buttons/DropDownButton'
 
 function TopBar() {
   return (
@@ -22,9 +23,7 @@ function TopBar() {
             <NavbarButton>
                 pricing
             </NavbarButton>
-            <NavbarButton>
-                more
-            </NavbarButton>
+            <DropDownButton/>
         </MBox>
         <MBox justifyContent={"flex-end"} className=" flex flex-row items-center" >
             <NavbarButton>

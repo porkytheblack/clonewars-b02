@@ -55,6 +55,7 @@ const CustomBoxContainer = styled(Box)`
     width: 100vw;
     margin-top: 90px;
     position: relative;
+    overflow-x: hidden !important;
     padding-left: 100px;
     padding-right: 100px;
     .Left{

@@ -17,5 +17,13 @@ function NavbarButton({ children }: {children: React.ReactNode}) {
 export default NavbarButton
 
 const CustomButton = styled('button')`
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
 `

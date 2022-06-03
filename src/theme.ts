@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
+import { ThemeOptions } from '@mui/material';
+
 
 const theme = createTheme({
   palette: {
@@ -11,6 +13,8 @@ const theme = createTheme({
       main: '#ffffff',
     },
   },
+  
+
 });
 
 export default theme;

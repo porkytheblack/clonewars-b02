@@ -74,12 +74,20 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0;
   font-family: "NeueMontreal", sans-serif;
-  
+  width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background: none;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: #3e3e3c;
 }
 
 
@@ -91,3 +99,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
