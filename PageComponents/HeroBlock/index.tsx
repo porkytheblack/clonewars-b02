@@ -35,7 +35,7 @@ function HeroBlock() {
                     Get started today
                 </SignUpButton>
                 <div className="flex flex-col mt-6 items-center justify-start">
-                    <div style={{marginBottom: "10px"}} className="flex flex-row items-center justify-center mb-3">
+                    <div style={{marginBottom: "10px", marginTop: "24px"}} className="flex flex-row items-center justify-center mb-3">
                         <Company name="andreessen_horowitz" />
                         <Company name="spark_capital" />
                         <Company name="y_combinator" />

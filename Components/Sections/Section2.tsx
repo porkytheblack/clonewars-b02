@@ -14,7 +14,7 @@ function Section2() {
             </Typography>
             <div className="hr-div" ></div>
         </div>
-        <div  className="flex ContenetRight flex-col items-end justify-start">
+        <div  className="flex ContentRight flex-col items-end justify-start">
             <Typography fontWeight={"medium"} fontSize={"72px"} variant="h1" fontFamily={`"NeueMontreal", sans-serif`} align="right" width="100%" >
                 Uncapped
             </Typography>
@@ -62,6 +62,7 @@ const CustomSectionBox = styled(Box)`
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
+        width: 100%;
     }
     .Companies{
         margin-top: 48px;
