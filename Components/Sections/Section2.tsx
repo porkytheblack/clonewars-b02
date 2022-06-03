@@ -27,7 +27,7 @@ function Section2() {
             <h4 className="TypographyContainer"  style={{  fontFamily:`NeueMontreal, sans-serif`,  color:"#918f8d", fontSize:"24px", fontWeight:"400", textAlign: "left", width: "55%" }} >
             Reps accepted to join SellX, have an entrepreneurial mindset, are resilient and are the best at what they do.
             </h4>
-            <SignUpButton style={{padding: "12px 28px", marginTop: "48px"}} >
+            <SignUpButton style={{padding: "12px 28px", marginTop: "48px", width: "258px"}} >
                 Learn more - For Sales Reps
             </SignUpButton>
             <div className="flex flex-row Companies">
@@ -62,6 +62,10 @@ const CustomSectionBox = styled(Box)`
     }
     .Companies{
         margin-top: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
     }
     .SectionImage{
         position: absolute !important;

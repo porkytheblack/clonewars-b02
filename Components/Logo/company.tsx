@@ -23,8 +23,8 @@ import { CSSProperties } from '@emotion/serialize'
 
 function Company({name, style}: {name: "andreessen_horowitz" | "spark_capital" | "y_combinator" | "swimply" | "deel" | "sunday"| "amazon" | "sap" | "google" , style?: React.CSSProperties}) {
   return (
-    <span  className="mr-4" >
-        <CustomImg  style={style} src={name == "andreessen_horowitz" ? andreessen_horowitz : name == "spark_capital" ? spark_capital : name == "y_combinator" ? y_combinator: name=="swimply" ? swimply : name == "deel" ? deel : name == "sunday" ? sunday : name == "amazon" ? amazon: name == "sap" ? sap : name == "google" ? google :  name == "directv" ? directv : name == "oracle" ? oracle : name == "allstate" ? allstate: name == "doordash" ? doordash : name == "uber" ? uber : name == "emotive" ? emotive : name == "wework" ? wework : ""}  alt={name} />
+    <span   >
+        <CustomImg  src={name == "andreessen_horowitz" ? andreessen_horowitz : name == "spark_capital" ? spark_capital : name == "y_combinator" ? y_combinator: name=="swimply" ? swimply : name == "deel" ? deel : name == "sunday" ? sunday : name == "amazon" ? amazon: name == "sap" ? sap : name == "google" ? google :  name == "directv" ? directv : name == "oracle" ? oracle : name == "allstate" ? allstate: name == "doordash" ? doordash : name == "uber" ? uber : name == "emotive" ? emotive : name == "wework" ? wework : ""}  alt={name} />
     </span>
   )
 }
@@ -32,4 +32,5 @@ function Company({name, style}: {name: "andreessen_horowitz" | "spark_capital" |
 export default Company
 
 const CustomImg = styled(Image)`
+  margin-right: 20px;
 `   
