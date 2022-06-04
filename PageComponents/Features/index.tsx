@@ -134,6 +134,12 @@ const CustomBoxContainer = styled(Box)`
         top: 0px;
         overflow: hidden;
     }
+<<<<<<< HEAD
     
+=======
+    .feature-button{
+        width: 500px !important;
+    }
+>>>>>>> 0ff73d2b186cf614a277328506b122b3910fc55c
 
 `

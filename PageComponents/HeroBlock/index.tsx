@@ -43,7 +43,6 @@ function HeroBlock() {
                             drive revenue
                         </span>
                     </h4>
-                
                 </div>
                 <SignUpButton style={{width: mobile ? "50vw" : "30%", padding: "12px 28px" , marginLeft: "28px"}} >
                     Get started today
