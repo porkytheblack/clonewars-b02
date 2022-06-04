@@ -80,11 +80,23 @@ const CustomContainerBox = styled(Box)`
     padding-bottom: 200px;
     padding-left: 100px;
     padding-right: 100px;
+    @media (max-width: 768px) {
+        padding: 10% 10%;
+    }
     position: relative;
     .directionButtons {
         position: absolute;
         bottom: 200px;
         right: 40px;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column !important;
+            width: 100px;
+            align-items: center;
+            justify-content: space-between !important;
+            bottom: 30px;
+            right: 0px;
+        }
     }
 `
 

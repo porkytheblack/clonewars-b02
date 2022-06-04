@@ -23,6 +23,13 @@ const CustomContainerButton = styled('button')`
     height: 60px;
     margin: 0px 10px;
     border-radius: 30px;
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+        margin: 0px 5px;
+        border-radius: 20px;
+        margin: 5px 0px;
+    }
     :hover{
         background: black;
         border: 2px solid white;

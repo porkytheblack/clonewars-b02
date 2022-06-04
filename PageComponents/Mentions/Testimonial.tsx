@@ -29,7 +29,7 @@ function Testimonial() {
     
   return (
     <CustomBoxContainer className='flex flex-col items-start justify-start w-full' >
-        <Typography fontWeight={"medium"} fontSize={"72px"} variant="h1" fontFamily={`"NeueMontreal", sans-serif`} align="left" width="100%" >
+        <Typography fontWeight={"medium"} className="text56" variant="h1" fontFamily={`"NeueMontreal", sans-serif`} align="left" width="100%" >
             {testimonials[id].testimonial}
         </Typography>
         <div className="flex InfoContainer flex-row items-center justify-start">
@@ -60,5 +60,6 @@ const CustomBoxContainer = styled(Box)`
         .info{
             margin-left: 16px;
         }
+        width: 80%;
     }
 `
