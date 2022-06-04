@@ -3,11 +3,12 @@ import type { AppProps } from 'next/app'
 import { wrapper } from '../redux/Store'
 import createEmotionCache from '../src/createEmotionCache';
 import { EmotionCache } from '@emotion/cache';
-import { CacheProvider } from '@emotion/react';
+import { CacheProvider} from '@emotion/react';
 import Head from 'next/head';
-import { CssBaseline, GlobalStyles, StyledEngineProvider, ThemeProvider } from '@mui/material';
+import { CssBaseline, StyledEngineProvider, ThemeProvider } from '@mui/material';
 import theme from '../src/theme';
 import Layout from '../Layout';
+
 
 const clientSideEmotionCache = createEmotionCache();
 

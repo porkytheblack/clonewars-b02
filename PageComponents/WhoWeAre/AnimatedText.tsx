@@ -26,7 +26,7 @@ function AnimatedText({children, pos}: {children: string, pos: number}) {
 
   return (
     <AnimatedTextBox  ref={ref} className="flex flex-row items-center justify-start w-full" >
-        <Typography fontFamily={`NeueMontreal, sans-serif`} fontSize={"72px"} align="left" fontWeight="medium" width="100%" >
+        <Typography fontFamily={`NeueMontreal, sans-serif`} className="text56" align="left" fontWeight="medium" width="100%" >
             {children}
         </Typography>
         <BoxMask width={width} />
@@ -38,6 +38,7 @@ export default AnimatedText
 
 const AnimatedTextBox  = styled('div')`
     position: relative;
+    
 `
 const BoxMask = styled(Box)<{width: string }>`
     position: absolute;

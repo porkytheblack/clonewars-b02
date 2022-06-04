@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   
   const name = useAppSelector(state=>state.awesomeness.name)
   return (
-    <HomeBox className="w-full flex flex-col items-center justify-start h-full " >
+    <HomeBox className="flex flex-col items-center justify-start h-full " >
         <HeroBlock/>
         <WhoWeAre/>
         <Section1/>
@@ -42,6 +42,8 @@ export default Home
 
 
 const HomeBox  = styled(Box)`
+width: 100vw;
+overflow-x: hidden;
 overflow-y: scroll;
 &::-webkit-scrollbar {
     width: 5px;
